@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@100;200;300;400;500;600;700&display=swap');
+
+
+
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+}
+nav{
+    height: 70vh;
+    background-color: #fd5b59;
+    border-radius: 0 0 0 6rem;
+    position: relative;
+    background-image: url('./img/bg-pattern-intro.svg');
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 100px;
+    color: #fff;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+.nav-1{
+    display: flex;
+    align-items: center;
+}
+.nav-1 h1{
+    font-size: 3rem;
+    font-family: 'Teko', sans-serif;
+    margin: 0;
+    margin-right: 3rem;
+}
+select{
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+select option{
+    color: #000;
+}
+.navbar button{
+    border: 2px solid #fc5654;
+    background-color: #ffffff00;
+    margin-left: 10px;
+    padding: 10px 20px;
+    border-radius: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+.navbar button:hover{
+    background-color: rgba(255, 255, 255, 0.384);
+    border: 2px solid rgba(255, 255, 255, 0.075);
+    transition: 0.5s;
+}
+
+
+
+
+.navbar2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.navbar2 h1{
+    font-family: 'Arvo', serif;
+    font-size: 2.5rem;
+    margin: 2rem 0 0 0;
+}
+.navbar2 p{
+    font-family: 'Arvo';
+    font-size: 1.3rem;
+}
+.btns{
+    margin-top: 20px;
+}
+.navbar2 button{
+    border: none;
+    background-color: #ffffff57;
+    margin-left: 10px;
+    padding: 10px 16px;
+    border-radius: 2rem;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.navbar2 button:hover{
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    transition: 0.8s;
+}
+
+
+
+.main1{
+    width: 100%;
+    min-height: 90vh;
+    margin-top: 10rem;
+    font-family: 'Arvo', sans-serif;
+    color: rgb(0, 0, 68);
+    overflow: hidden;
+    position: relative;
+}
+.main1 h1{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.main1-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10rem;
+}
+.main1-text{
+    width: 600px;
+}
+.main1-text p{
+    line-height: 1.5;
+}
+.main1-img{
+    background: url('./img/illustration-editor-desktop.svg');
+    width: 40%;
+    height: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: -100px;
+}
+
+
+
+
+.main2{
+    margin: 8rem 0;
+    display: flex;
+    background-color: rgb(24, 24, 54);
+    color: #fff;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    border-radius: 0 4rem 0 4rem;
+    background-image: url('./img/bg-pattern-circles.svg');
+    background-position-y: -500px;
+    background-position-x: -100px;
+    background-repeat: no-repeat;
+    font-family: 'arvo';
+}
+
+.main2-text{
+    width: 500px;
+    line-height: 1.5;
+}
+
+
+
+.main3{
+    display: flex;
+    position: relative;
+    justify-content: start;
+    align-items: center;
+    color: rgb(0, 0, 68);
+    font-family: 'Arvo';
+}
+.main3-text{
+    width: 600px;
+}
+.main3-text p{
+    line-height: 1.5;
+}
+.main3-img{
+    background: url('./img/illustration-laptop-desktop.svg');
+    width: 600px;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateX(-100px);
+}
+
+
+
+
+
+footer{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    background-color: rgb(2, 2, 36);
+    color: #fff;
+    min-height: 30vh;
+    border-radius: 0 4rem 0 0;
+}
+footer h1{
+    font-family: 'teko';
+    font-size: 3rem;
+}
+ul{
+    line-height: 2;
+    font-family: 'Arvo';
+}
+ul li{
+    cursor: pointer;
+}
+ul li:hover{
+    color: rgb(255, 190, 190);
+    text-decoration: underline;
+}
+
+
+
+
+
+
+@media (max-width: 1051px){
+    .main1{
+        min-height: 100vh;
+        margin-top: 5rem;
+    }
+    .main1-flex{
+        padding-left: 2rem;
+    }
+    .main1-text{
+        width: 500px;
+    }
+    .main1-img{
+        width: 400px;
+        height: 400px;
+        right: -120px;
+    }
+
+
+    .main2{
+        height: 300px;
+    }
+    
+    .main2-text{
+        width: 400px;
+    }
+    .main2 img{
+        height: 420px;
+    }
+
+
+    .main3-text{
+        margin-right: 40px;
+
+    }
+}
+
+
+
+
+@media (max-width: 870px){
+    nav{
+        height: 60vh;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2% 4%;
+    }
+    .nav-1 h1{
+        margin-right: 2rem;
+    }
+    select{
+        margin-right: 10px;
+    }
+
+
+
+    .main1 h1{
+        font-size: 4vw;
+    }
+    .main1-flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding-left: 1rem;
+    }
+    .main1-img{
+        position: static;
+    }
+
+    .main3{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+
+@media (max-width: 790px){
+    select{
+        font-size: 2vw;
+        margin-top: 10px;
+    }
+    .navbar button{
+        padding: 8px 15px;
+        font-size: 1vw;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .main1-flex h2{
+        font-size: 3vw;
+    }
+    .main1-flex p{
+        font-size: 2vw;
+    }
+    .main1-img{
+        margin-top: 3rem;
+    }
+
+    .main2 h3{
+        font-size: 2.5vw;
+    }
+    .main2 p{
+        font-size: 2vw;
+    }
+    .main3-img{
+        width: 400px;
+        height: 400px;
+        transform: translateX(0px);
+    }
+    .main3-text{
+        width: 400px;
+    }
+    .main3 p{
+        font-size: 2vw;
+    }
+    .main3 h2{
+        font-size: 3vw;
+    }
+
+
+
+    footer{
+        margin-top: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: baseline;
+        background-color: rgb(2, 2, 36);
+        color: #fff;
+        min-height: 30vh;
+        border-radius: 0 4rem 0 0;
+    }
+    footer h1{
+        font-family: 'teko';
+        font-size: 3rem;
+    }
+    ul{
+        line-height: 2;
+        font-family: 'Arvo';
+    }
+    ul li{
+        cursor: pointer;
+    }
+    ul li:hover{
+        color: rgb(255, 190, 190);
+        text-decoration: underline;
+    }
+}
+
+
+
+@media (max-width: 670px){
+    .nav-1 h1{
+        font-size: 7vw;
+    }
+    .navbar2 h1{
+        font-size: 5vw;
+    }
+    .navbar2 p{
+        font-size: 3vw;
+    }
+
+    .main1-text{
+        max-width: 400px;
+    }
+    .main1-img{
+        height: 300px;
+        width: 300px;
+    }
+
+    .main2{
+        height: 200px;
+    }
+    
+    .main2-text{
+        max-width: 400px;
+    }
+    .main2 img{
+        height: 200px;
+    }
+}
+
+
+
+@media (max-width: 500px){
+    .navbar2 button{
+        font-size: 2vw;
+        padding: 8px 12px;
+        border-radius: 1rem;
+        font-weight: normal;
+        margin-left: 20px;
+    }
+    nav{
+        height: 50vh;
+    }
+
+    .main1-text{
+        max-width: 300px;
+    }
+    .main1-img{
+        height: 200px;
+        width: 200px;
+    }
+    .main1{
+        height: 300px;
+    }
+    .main2{
+        margin: 2rem 0;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column-reverse;
+        height: 400px;
+        text-align: center;
+    }
+    .main2 img{
+        height: 250px;
+    }
+
+
+    .main3-img{
+        width: 200px;
+        height: 200px;
+    }
+    .main3-text{
+        width: 300px;
+    }
+
+}
+
+
+
+
+@media (max-width: 350px){
+   nav{
+       background-size: 150%;
+       background-position-x: 0;
+       height: 40vh;
+   }
+   .main1-img{
+    height: 100px;
+    width: 100px;
+    }
+    .main2-text{
+        width: 200px;
+    }
+    .main2{
+        height: 240px;
+        margin: 1rem 0;
+    }
+    .main2 img{
+        height: 150px;
+    }
+    .main3-text{
+        width: 200px;
+    }
+
+}
